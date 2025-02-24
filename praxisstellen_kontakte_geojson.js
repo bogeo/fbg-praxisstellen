@@ -358,7 +358,7 @@ var geoJSON = {
 				"Webseite":"www.vtw-gmbh.de", 
 				"Kontakt":"Philipp Landa", 
 				"Tel":"+49 201 384489-21", 
-				"E-Mail":""
+				"E-Mail":"p.landa@vtw-gmbh.de"
 			}, 
 			"geometry":{
 				"coordinates":["6.983901", "51.381489"], 
@@ -839,9 +839,9 @@ var geoJSON = {
 				"PLZ":"48155", 
 				"Ort":"Münster", 
 				"Webseite":"www.conterra.de", 
-				"Kontakt":"", 
-				"Tel":"+49 0251 59689-300", 
-				"E-Mail":"r.abke@conterra.de"
+				"Kontakt":"Holger Fritze", 
+				"Tel":"+49 251 59689-397", 
+				"E-Mail":"h.fritze@conterra.de"
 			}, 
 			"geometry":{
 				"coordinates":["7.652600981667087", "51.93511434990086"], 
@@ -932,7 +932,7 @@ var geoJSON = {
 				"Ort":"Paderborn", 
 				"Webseite":"www.atos.net/de/deutschland", 
 				"Kontakt":"Karl-Heinz Boehm", 
-				"Tel":"", 
+				"Tel":"+49 211 39932528", 
 				"E-Mail":"karl-heinz.boehm@atos.net"
 			}, 
 			"geometry":{
@@ -977,8 +977,8 @@ var geoJSON = {
 				"PLZ":"48155", 
 				"Ort":"Muenster", 
 				"Webseite":"www.52north.org/", 
-				"Kontakt":"", 
-				"Tel":"", 
+				"Kontakt":"Simon Jirka", 
+				"Tel":"+49 251 396371 0", 
 				"E-Mail":"jirka@52north.org"
 			}, 
 			"geometry":{
@@ -1065,16 +1065,16 @@ var geoJSON = {
 			"properties":{
 				"Firma":"IP SYSCON GmbH", 
 				"Abteilung":"", 
-				"Straße":"Tiestestr. 16-18", 
-				"PLZ":"30171", 
-				"Ort":"Hannover", 
+				"Straße":"Lindenallee 43", 
+				"PLZ":"45127", 
+				"Ort":"Essen", 
 				"Webseite":"www.ipsyscon.de", 
 				"Kontakt":"Isabelle Poppe-Gierse", 
-				"Tel":"", 
+				"Tel":"+49 211 850303-0", 
 				"E-Mail":"isabelle.poppe-gierse@ipsyscon.de"
 			}, 
 			"geometry":{
-				"coordinates":["9.760913347411384", "52.36451991435991"], 
+				"coordinates":["7.009007", "51.454048"], 
 				"type":"Point"
 			},
 			"label":{
@@ -1134,20 +1134,20 @@ var geoJSON = {
 			"properties":{
 				"Firma":"PRISMA solutions EDV-Dienstleitungen GmbH", 
 				"Abteilung":"", 
-				"Straße":"Klostergasse 18", 
-				"PLZ":"2340", 
-				"Ort":"Mödling, Österreich", 
+				"Straße":"Schönhauser Allee 10-11", 
+				"PLZ":"10119", 
+				"Ort":"Berlin", 
 				"Webseite":"www.prisma-solutions.com", 
 				"Kontakt":"Florian Hilti", 
 				"Tel":"", 
 				"E-Mail":"florian.hilti@prisma-solutions.com"
 			}, 
 			"geometry":{
-				"coordinates":["16.285675097062434", "48.0863108628437"], 
+				"coordinates":["13.411648", "52.530327"], 
 				"type":"Point"
 			},
 			"label":{
-				"study":["Vermessung"],
+				"study":["Vermessung", "Geoinformatik"],
 				"topic":[]
 			},
 			"moodlePageId": ""
@@ -1447,6 +1447,259 @@ var geoJSON = {
 			},
 			"label":{
 				"study":["Geoinformatik"],
+				"topic":[]
+			},
+			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"Bezirksregierung Düsseldorf", 
+				"Abteilung":"", 
+				"Straße":"Cecilienallee 2",
+				"PLZ":"40474", 
+				"Ort":"Düsseldorf", 
+				"Webseite":"https://www.brd.nrw.de/", 
+				"Kontakt":"Christoph Büser", 
+				"Tel":"+49 211 475-5959", 
+				"E-Mail":""
+			}, 
+			"geometry":{
+				"coordinates":["6.772781", "51.237968"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Geoinformatik", "Vermessung"],
+				"topic":[]
+			},
+			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"Deutsche Bahn", 
+				"Abteilung":"", 
+				"Straße":"Landfermannstraße 6",
+				"PLZ":"47051", 
+				"Ort":"Duisburg", 
+				"Webseite":"", 
+				"Kontakt":"Luisa Lehne", 
+				"Tel":"", 
+				"E-Mail":"Luisa.Lehne@deutschebahn.com personalmarketing-west@deutschebahn.de"
+			}, 
+			"geometry":{
+				"coordinates":["6.773061", "51.433543"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Geoinformatik", "Vermessung"],
+				"topic":[]
+			},
+			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"Die Autobahn GmbH des Bundes", 
+				"Abteilung":"", 
+				"Straße":"Lilienthalstraße 5",
+				"PLZ":"59065", 
+				"Ort":"Hamm", 
+				"Webseite":"https://www.autobahn.de/ueber-uns/niederlassungen/westfalen", 
+				"Kontakt":"", 
+				"Tel":"", 
+				"E-Mail":"susanne.schlenga@autobahn.de Anne.Hoeckber@autobahn.de"
+			}, 
+			"geometry":{
+				"coordinates":["6.905575", "49.976973"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Geoinformatik", "Vermessung"],
+				"topic":[]
+			},
+			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"DMT GmbH & Co. KG", 
+				"Abteilung":"", 
+				"Straße":"Am TÜV 1",
+				"PLZ":"45307", 
+				"Ort":"Essen", 
+				"Webseite":"https://www.dmt-group.com/de/karriere/werden-sie-dmt.html", 
+				"Kontakt":"Janna Ruiters", 
+				"Tel":"+49 2011721544", 
+				"E-Mail":""
+			}, 
+			"geometry":{
+				"coordinates":["7.056840", "51.462882"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Geoinformatik", "Vermessung"],
+				"topic":[]
+			},
+			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"FEV EVA GmbH", 
+				"Abteilung":"", 
+				"Straße":"Heidemannstraße 41a",
+				"PLZ":"80939", 
+				"Ort":"München", 
+				"Webseite":"https://fev-eva.com/", 
+				"Kontakt":"Veronika Seitzl", 
+				"Tel":"+49 89 264835527", 
+				"E-Mail":""
+			}, 
+			"geometry":{
+				"coordinates":["11.590682", "48.202410"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Geoinformatik", "Vermessung"],
+				"topic":[]
+			},
+			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"Geonetzwerk Ruhr", 
+				"Abteilung":"", 
+				"Straße":"Kronprinzenstr. 35",
+				"PLZ":"45128", 
+				"Ort":"Essen", 
+				"Webseite":"", 
+				"Kontakt":"Katharina Straßburger", 
+				"Tel":"+49 201 2069-363", 
+				"E-Mail":"strassburger@rvr.ruhr"
+			}, 
+			"geometry":{
+				"coordinates":["7.020895", "51.447147"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Geoinformatik", "Vermessung"],
+				"topic":[]
+			},
+			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"GI-Consult GmbH", 
+				"Abteilung":"", 
+				"Straße":"Fanny-Zobel-Straße 5",
+				"PLZ":"12435", 
+				"Ort":"Berlin", 
+				"Webseite":"https://www.gi-consult.de", 
+				"Kontakt":"Arnd Wellershaus", 
+				"Tel":"+49 171 6510851", 
+				"E-Mail":"a.wellershaus@gi-consult.de"
+			}, 
+			"geometry":{
+				"coordinates":["13.455595", "52.496501"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Geoinformatik"],
+				"topic":[]
+			},
+			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"Kreis Kleve", 
+				"Abteilung":"6.2 Kataster und Vermessung", 
+				"Straße":"Nassauerallee 15-23",
+				"PLZ":"47533", 
+				"Ort":"Kleve", 
+				"Webseite":"", 
+				"Kontakt":"", 
+				"Tel":"+49 2821 85-0", 
+				"E-Mail":"stefan.rattmann@kreis-kleve.de"
+			}, 
+			"geometry":{
+				"coordinates":["6.137805", "51.782017"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Geoinformatik", "Vermessung"],
+				"topic":[]
+			},
+			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"Landesamt Geoinformationen Bremen", 
+				"Abteilung":"", 
+				"Straße":"Lloydstraße 4",
+				"PLZ":"28217", 
+				"Ort":"Bremen", 
+				"Webseite":"https://www.geo.bremen.de/", 
+				"Kontakt":"Karolin Gersberg", 
+				"Tel":"+49 421 36130316", 
+				"E-Mail":"karolin.gersberg@geo.bremen.de"
+			}, 
+			"geometry":{
+				"coordinates":["8.787458", "53.084556"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Geoinformatik", "Vermessung"],
+				"topic":[]
+			},
+			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"Landeshauptstadt Düsseldorf", 
+				"Abteilung":"", 
+				"Straße":"Brinckmannstraße 5",
+				"PLZ":"40225", 
+				"Ort":"Düsseldorf", 
+				"Webseite":"https://www.duesseldorf.de/vermessung/ausbildung", 
+				"Kontakt":"Christoph Gabel", 
+				"Tel":"+49 211 - 8993610", 
+				"E-Mail":"ausbildung-vermessung@duesseldorf.de"
+			}, 
+			"geometry":{
+				"coordinates":["6.786821", "51.203262"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Vermessung"],
+				"topic":[]
+			},
+			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"RINAS GmbH", 
+				"Abteilung":"", 
+				"Straße":"Rheinpromenade 13",
+				"PLZ":"40789", 
+				"Ort":"Monheim am Rhein", 
+				"Webseite":"", 
+				"Kontakt":"Melvin Rinas", 
+				"Tel":"+49 2173 919310", 
+				"E-Mail":"melvin.rinas@rinas.de"
+			}, 
+			"geometry":{
+				"coordinates":["6.888528", "51.102753"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Vermessung"],
 				"topic":[]
 			},
 			"moodlePageId": ""
