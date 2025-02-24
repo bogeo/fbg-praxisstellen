@@ -1,6 +1,5 @@
 var mapContainerNodeId = "mapContainer";
-var linkToJsonFile = "./resources/praxis.json";
-// var linkToJsonFile = "http://localhost:8000/resources/praxis.json";
+var linkToJsonFile = "./kontakte.geojson";
 var useCluster = true;
 var clusterToggleSwitchId = "clusterToggleSwitch";
 
@@ -432,29 +431,36 @@ function addLeafletOverlay(geoJSON, title, styleClass) {
 
 
 function loadLayers(geoJSON) {
-    let geoJSON_surveilling = JSON.parse(JSON.stringify(geoJSON));
-    let geoJSON_geoinformatics = JSON.parse(JSON.stringify(geoJSON));
-    let geoJSON_careerDay = JSON.parse(JSON.stringify(geoJSON));
 
-    // study is an array. so multiple studies may be specified
-    // hence query the array if it includes the respective array
-    let features_surveilling = geoJSON_surveilling.features.filter(feature => feature.label.study.includes(study_surveilling));
-    let features_geoinformatics = geoJSON_geoinformatics.features.filter(feature => feature.label.study.includes(study_geoinformatics));
-    let features_careerDay = geoJSON_careerDay.features.filter(feature => feature[moodlePageId] && feature[moodlePageId] != "");
+    fetch(linkToJsonFile)
+    .then((response) => {
+      return response.json();
+    })
+    .then((geoJSON) => {
+        let geoJSON_surveilling = JSON.parse(JSON.stringify(geoJSON));
+        let geoJSON_geoinformatics = JSON.parse(JSON.stringify(geoJSON));
+        let geoJSON_careerDay = JSON.parse(JSON.stringify(geoJSON));
 
-    geoJSON_surveilling.features = features_surveilling;
-    geoJSON_geoinformatics.features = features_geoinformatics;
-    geoJSON_careerDay.features = features_careerDay;
+        // study is an array. so multiple studies may be specified
+        // hence query the array if it includes the respective array
+        let features_surveilling = geoJSON_surveilling.features.filter(feature => feature.label.study.includes(study_surveilling));
+        let features_geoinformatics = geoJSON_geoinformatics.features.filter(feature => feature.label.study.includes(study_geoinformatics));
+        let features_careerDay = geoJSON_careerDay.features.filter(feature => feature[moodlePageId] && feature[moodlePageId] != "");
 
-    if (features_surveilling.length > 0) {
-        addLeafletOverlay(geoJSON_surveilling, label_layer_surveilling, style_class_surveilling);
-    }
-    if (features_geoinformatics.length > 0) {
-        addLeafletOverlay(geoJSON_geoinformatics, label_layer_geoinformatics, style_class_geoinformatics);
-    }
-    if (features_careerDay.length > 0) {
-        addLeafletOverlay(geoJSON_careerDay, label_layer_careerDay, style_class_careerDay);
-    }
+        geoJSON_surveilling.features = features_surveilling;
+        geoJSON_geoinformatics.features = features_geoinformatics;
+        geoJSON_careerDay.features = features_careerDay;
+
+        if (features_surveilling.length > 0) {
+            addLeafletOverlay(geoJSON_surveilling, label_layer_surveilling, style_class_surveilling);
+        }
+        if (features_geoinformatics.length > 0) {
+            addLeafletOverlay(geoJSON_geoinformatics, label_layer_geoinformatics, style_class_geoinformatics);
+        }
+        if (features_careerDay.length > 0) {
+            addLeafletOverlay(geoJSON_careerDay, label_layer_careerDay, style_class_careerDay);
+        }
+    })
 
 
 }
