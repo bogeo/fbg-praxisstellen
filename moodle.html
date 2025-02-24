@@ -1,0 +1,190 @@
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        crossorigin="" />
+
+    <!-- leaflet dependencies -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js" crossorigin=""></script>
+
+    <!-- leaflet markercluster -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js" crossorigin=""></script>
+
+    <!-- leaflet search -->
+    <script src="https://unpkg.com/leaflet-search@3.0.2/dist/leaflet-search.min.js" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search@3.0.3/dist/leaflet-search.min.css" crossorigin="" />
+
+    
+<!-- own stylesheet -->
+    <style>
+        #mapContainer {
+            height: 50vH;
+        }
+
+        .red {
+            color: #E2001A;
+        }
+
+        .green {
+            color: green;
+            font-size: 12px !important;
+        }
+
+        .blue {
+            color: #146EBE;
+        }
+
+        .white {
+            color: white;
+        }
+
+        #mapContainer .icon {
+
+            width: 15px;
+            height: 15px;
+            float: left;
+            margin-right: 5px;
+            margin-top: 2px;
+        }
+
+        .icon-blue {
+            color: #146EBE;
+            background-color: #146EBE;
+            background: #146EBE;
+        }
+
+        .icon-red {
+            color: #E2001A;
+            background-color: #E2001A;
+            background: #E2001A;
+        }
+
+        .icon-green {
+            color: green;
+            background-color: green;
+            background: green;
+        }
+
+        .bg-blue {
+            color: antiquewhite;
+            background-color: rgba(20, 110, 190, 0.6) !important;
+            background: rgba(20, 110, 190, 0.6) !important;
+        }
+
+        .bg-green {
+            color: antiquewhite;
+            background-color: rgba(0, 128, 0, 0.6) !important;
+            background: rgba(0, 128, 0, 0.6) !important;
+        }
+
+        .bg-red {
+            color: antiquewhite;
+            background-color: rgba(226, 0, 26, 0.6) !important;
+            background: rgba(226, 0, 26, 0.6) !important;
+        }
+
+        .featurePropertyPopupContent {
+            font-size: 11px;
+            max-width: 300px;
+            max-height: 300px;
+            overflow: auto;
+        }
+
+
+        /* TOGGLE SWITCH */
+
+        /* The switch - the box around the slider */
+
+        #clusterToggle {
+            position: absolute;
+            top: 10px;
+            left: 100px;
+            z-index: 9999;
+            color: #ccc;
+            background-color: rgba(233, 233, 233, 0.5);
+            color: black;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        /* Hide default HTML checkbox */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        /* The slider */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+
+    <!-- empty map container div - will be filled later as interactive map -->
+
+    <div id="mapContainer"></div>
+
+    <div id="clusterToggle">
+        <b><i>Punktmarker clustern? &nbsp;&nbsp;</i></b>
+        <label class="switch">
+            <input type="checkbox" id="clusterToggleSwitch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+	<script src="https://gitlab.hs-bochum.de/c10d08529/fbg_praxisstellen/-/raw/main/praxisstellen_kontakte_geojson.js" crossorigin=""></script>
+	<script src="https://gitlab.hs-bochum.de/c10d08529/fbg_praxisstellen/-/raw/main/praxisstellen_map.js" crossorigin=""></script>
