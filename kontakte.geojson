@@ -1703,6 +1703,29 @@
 				"topic":[]
 			},
 			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"NRW.Mobidrom GmbH", 
+				"Abteilung":"", 
+				"Straße":"Peter-Müller-Straße 10",
+				"PLZ":"40468", 
+				"Ort":"Düsseldorf", 
+				"Webseite":"https://www.mobidrom.nrw", 
+				"Kontakt":"Hendrik Schmidt", 
+				"Tel":"", 
+				"E-Mail":"hendrik.schmidt@mobidrom.nrw"
+			}, 
+			"geometry":{
+				"coordinates":["6.770783", "51.275883"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Geoinformatik", "Vermessung"],
+				"topic":[]
+			},
+			"moodlePageId": ""
 		}
 	]
 }
