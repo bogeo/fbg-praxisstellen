@@ -1726,6 +1726,52 @@
 				"topic":[]
 			},
 			"moodlePageId": ""
+		},
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"Ansperger GmbH (Planungs- und Vermessungsgesellschaft)", 
+				"Abteilung":"Standort Dülmen", 
+				"Straße":"Coesfelder Straße 235",
+				"PLZ":"48249", 
+				"Ort":"Dülmen", 
+				"Webseite":"https://ansperger.de/karriere/", 
+				"Kontakt":"", 
+				"Tel":"+49 2594 8406969", 
+				"E-Mail":"va@ansperger.de"
+			}, 
+			"geometry":{
+				"coordinates":["7.261393", "51.842529"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Geoinformatik", "Vermessung"],
+				"topic":[]
+			},
+			"moodlePageId": ""
+		},		
+		{
+			"type":"Feature", 
+			"properties":{
+				"Firma":"Ansperger GmbH (Planungs- und Vermessungsgesellschaft)", 
+				"Abteilung":"Zentrale Kamp-Lintfort", 
+				"Straße":"Südstraße 25",
+				"PLZ":"47475", 
+				"Ort":"Kamp-Lintfort", 
+				"Webseite":"https://ansperger.de/karriere/", 
+				"Kontakt":"", 
+				"Tel":"+49 2842 9635-0", 
+				"E-Mail":"va@ansperger.de"
+			}, 
+			"geometry":{
+				"coordinates":["6.541296", "51.486387"], 
+				"type":"Point"
+			},
+			"label":{
+				"study":["Geoinformatik", "Vermessung"],
+				"topic":[]
+			},
+			"moodlePageId": ""
 		}
 	]
 }
